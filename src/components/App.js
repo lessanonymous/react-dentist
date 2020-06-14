@@ -234,18 +234,14 @@ class App extends React.Component {
         2,
         6
       );
-      console.log(addedAppointment);
       const removedAppointment = this.removeAppointment(addedAppointment, 1);
-      console.log(removedAppointment);
       const madePatientSick = this.makePatientSick(removedAppointment, 10);
-      console.log(madePatientSick);
       const movedAppointment = this.moveAppointment(
         madePatientSick,
         13,
         15,
         15
       );
-      console.log(movedAppointment);
       return movedAppointment;
     });
   };
