@@ -1,0 +1,104 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.day-calendar {
+  display: grid;
+  grid-template-columns: 50%;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.day-calendar-day {
+  display: grid;
+  row-gap: 0.5rem;
+  grid-template-rows: 3rem;
+  grid-auto-rows: 7rem;
+}
+
+.day-title {
+  justify-self: center;
+}
+
+.day-appointment {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: white;
+}
+
+.day-appointment-header {
+  display: grid;
+  grid-template-columns: 75% 20%;
+  background-color: lightseagreen;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.patient {
+  justify-self: flex-start;
+}
+
+.day-appointment-employees {
+  display: grid;
+  justify-items: flex-start;
+  grid-template-columns: 95%;
+  justify-content: center;
+  align-content: center;
+}
+
+.sick {
+  background-color: red;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 0.3rem;
+}
+
+.day {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+}
+
+.day-header {
+  background-color: lightseagreen;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.day-appointments {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 90%;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.specific-day {
+  border-bottom: lightgray solid 1px;
+  padding: 0.5rem 0;
+}
+
+.specific-day:last-child {
+  border-bottom: none;
+}
